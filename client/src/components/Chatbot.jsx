@@ -20,7 +20,7 @@ const Chatbot = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`${process.env.RENDER_SERVER}/chat`, {
+      const res = await fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
@@ -69,8 +69,8 @@ const Chatbot = () => {
             >
               <div
                 className={`px-4 py-2 rounded-xl max-w-[80%] whitespace-pre-wrap shadow-sm ${msg.type === "user"
-                    ? "bg-blue-600 text-white rounded-br-none"
-                    : "bg-gray-200 text-gray-800 rounded-bl-none"
+                  ? "bg-blue-600 text-white rounded-br-none"
+                  : "bg-gray-200 text-gray-800 rounded-bl-none"
                   }`}
               >
                 {msg.text}
