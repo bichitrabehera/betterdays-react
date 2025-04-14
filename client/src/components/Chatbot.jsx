@@ -51,14 +51,11 @@ const Chatbot = () => {
 
   return (
     <div
-      className=""
-      style={{ top: "100px", height: "calc(95vh - 90px)" }} // adjust top value if your header is taller
+      className="w-screen"
+      style={{ top: "100px", height: "calc(95vh - 70px)" }} // adjust top value if your header is taller
     >
-      <div className="h-full w-full max-w-4xl mx-auto bg-white shadow-xl flex flex-col">
-        {/* Header inside chat (optional) */}
-        <div className="bg-[#006995] text-white px-6 mt-2 py-3">
-          <h2 className="text-lg font-semibold">Wellness Chatbot</h2>
-        </div>
+      <div className="h-full w-full max-w-5xl mx-auto bg-white shadow-xl flex flex-col">
+        
 
         {/* Messages */}
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-5 bg-blue-50 text-[15px]">
@@ -69,7 +66,7 @@ const Chatbot = () => {
             >
               <div
                 className={`px-4 py-2 rounded-xl max-w-[80%] whitespace-pre-wrap shadow-sm ${msg.type === "user"
-                  ? "bg-blue-600 text-white rounded-br-none"
+                  ? "bg-[#006995] text-white rounded-br-none"
                   : "bg-gray-200 text-gray-800 rounded-bl-none"
                   }`}
               >
@@ -104,7 +101,7 @@ const Chatbot = () => {
             />
             <button
               onClick={handleSend}
-              className="bg-blue-600 text-white px-4 py-3 rounded-full hover:bg-blue-700 transition"
+              className="bg-[#006994] text-white px-4 py-3 rounded-full hover:bg-blue-700 transition"
             >
               <i className="ri-send-plane-fill text-lg"></i>
             </button>

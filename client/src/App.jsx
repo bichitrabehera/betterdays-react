@@ -5,12 +5,14 @@ import Home from './components/Home';
 import Resources from './components/Resources';
 import Assessment from './components/Assessment';
 import Chatbot from './components/Chatbot';
+import ScrollToTop from './ScrollToTop';
 
 const App = () => {
   return (
     <>
       <Header />
       <main className="pt-15"> {/* Add top padding to prevent overlap */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/assessment" element={<Assessment />} />

@@ -6,7 +6,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="bg-white py-3 px-2 mx-auto flex fixed top-0 left-0 right-0 border-b-2 border-gray-400 justify-between items-center w-full mb-24 z-50">
+        <div className="header bg-white py-3 px-4 flex fixed top-0 left-0 right-0 border-b-2 border-gray-400 justify-between items-center w-full mb-24 z-50">
             <div className="logo">
                 <h4 className="text-[22px] text-[#0084bd] p-1 font-bold">BetterDays</h4>
             </div>
