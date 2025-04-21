@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="pt-15"> {/* Add top padding to prevent overlap */}
+      <main>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

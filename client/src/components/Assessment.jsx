@@ -98,11 +98,11 @@ const Assessment = () => {
     return (
         <>
             <div className="min-h-screen ">
-                <div className="container mx-auto px-4 py-12">
+                <div className="container mx-auto px-4 py-4">
                     <div className="max-w-2xl mx-auto">
                         <div className="text-center mb-8">
                             <h1 className="text-2xl font-bold text-gray-800 mb-2">Mental Health Check-In</h1>
-                            <p className="text-gray-600">
+                            <p className="text-gray-600 text-[15px]">
                                 This self-assessment is based on the PHQ-9 depression screening tool. It's not a diagnosis, but can help identify symptoms.
                             </p>
                         </div>
