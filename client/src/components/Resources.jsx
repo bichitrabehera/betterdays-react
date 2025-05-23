@@ -163,22 +163,22 @@ const Resources = () => {
 
                     {/* Books */}
                     <section className="mb-24">
-                        <h2 className="text-2xl font-bold text-[#082f49] mb-8">Recommended Books</h2>
+                        <h2 className="text-2xl font-bold text-[#000000] mb-8">Recommended Books</h2>
                         <p className="text-gray-700 mb-6 text-base">Hand-picked reads to empower your mental wellness and personal growth.</p>
                         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                             {recommendedBooks.map((book, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-yellow-100"
+                                    className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition border border-blue-100"
                                 >
-                                    <h3 className="text-xl font-bold text-[#78350f] mb-2">{book.title}</h3>
-                                    <p className="text-sm text-[#854d0e] mb-2">by {book.author}</p>
-                                    <p className="text-sm text-[#78350f] mb-4">{book.description}</p>
+                                    <h3 className="text-xl font-bold text-[#000000] mb-2">{book.title}</h3>
+                                    <p className="text-sm text-[#00000e] mb-2">by {book.author}</p>
+                                    <p className="text-sm text-[#000000] mb-4">{book.description}</p>
                                     <a
                                         href={book.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block bg-[#78350f] text-white text-sm font-medium px-5 py-2.5 rounded-xl hover:bg-[#92400e] transition"
+                                        className="inline-block bg-blue-700 text-white text-sm font-medium px-5 py-2.5 rounded-xl hover:bg-[#92400e] transition"
                                     >
                                         View on Amazon →
                                     </a>
