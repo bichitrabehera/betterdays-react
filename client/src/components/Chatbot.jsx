@@ -63,7 +63,7 @@ const Chatbot = () => {
           className={`flex ${msg.type === "user" ? "justify-end" : "justify-start"}`}
         >
           <div
-            className={`px-4 py-3 rounded-xl max-w-[85%] whitespace-pre-wrap shadow-sm ${
+            className={`px-4 py-1 rounded-xl max-w-[85%] whitespace-pre-wrap shadow-sm ${
               msg.type === "user"
                 ? "bg-[#006995] text-white rounded-br-none"
                 : "bg-gray-200 text-gray-800 rounded-bl-none"
