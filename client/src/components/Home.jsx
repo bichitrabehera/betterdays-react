@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <section
                 id="home"
-                className="bg-[#006995] min-h-[450px] flex flex-col justify-center items-center px-6 py-16 text-center"
+                className="bg-blue-700 min-h-[450px] flex flex-col justify-center items-center px-6 py-16 text-center"
             >
                 <div className="max-w-3xl">
                     <h1 className="text-2xl md:text-3xl font-extrabold uppercase text-blue-100 mb-6 leading-tight">
